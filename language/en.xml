@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/5.4/language.xsd" languagecode="de">
+	<category name="wcf.like">
+		<item name="wcf.like.title.de.julian-pfeil.todolist.reactions.likeableTodo"><![CDATA[Reacted with {@$like->render()} to the to-do <a href="{link application='todolist' controller='Todo' object=$todo}{/link}" class="todoLink" data-todo-id="{@$todo->todoID}">{$todo->getTitle()}</a>.]]></item>
+ 	</category>
+
+	
+	<category name="todolist.like">
+		<item name="todolist.like.notification.title"><![CDATA[Reaction to your to-do]]></item>
+		<item name="todolist.like.notification.title.stacked"><![CDATA[{#$count} users reacted to your to-do]]></item>
+		<item name="todolist.like.notification.message"><![CDATA[<strong>{$author}</strong> reacted to your to-do <a href="{link application='todolist' controller='Todo' object=$todo}{/link}">{$todo->getTitle()}</a> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
+		<item name="todolist.like.notification.message.stacked"><![CDATA[{if $count < 4}{@$authors[0]->getAnchorTag()}{if $count == 2} and {else}, {/if}{@$authors[1]->getAnchorTag()}{if $count == 3} and {@$authors[2]->getAnchorTag()}{/if}{else}{@$authors[0]->getAnchorTag()} and {#$others} other users{/if} reacted to your to-do <a href="{link application='todolist' controller='Todo' object=$todo}{/link}">{$todo->getTitle()}</a> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
+	</category>
+</language>

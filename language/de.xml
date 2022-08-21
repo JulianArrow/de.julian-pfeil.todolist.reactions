@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/5.4/language.xsd" languagecode="de">
+	<category name="wcf.like">
+		<item name="wcf.like.title.de.julian-pfeil.todolist.reactions.likeableTodo"><![CDATA[Hat mit {@$like->render()} auf das To-do <a href="{link application='todolist' controller='Todo' object=$todo}{/link}" class="tpdpLink" data-todo-id="{@$todo->todoID}">{$todo->getTitle()}</a> reagiert.]]></item>
+ 	</category>
+
+	<category name="todolist.like">
+		<item name="todolist.like.notification.title"><![CDATA[Reaktion auf {if LANGUAGE_USE_INFORMAL_VARIANT}dein{else}Ihr{/if} To-do]]></item>
+		<item name="todolist.like.notification.title.stacked"><![CDATA[{#$count} Benutzer haben auf {if LANGUAGE_USE_INFORMAL_VARIANT}dein{else}Ihr{/if} To-do reagiert]]></item>
+		<item name="todolist.like.notification.message"><![CDATA[<strong>{$author}</strong> hat auf {if LANGUAGE_USE_INFORMAL_VARIANT}dein{else}Ihr{/if} To-do <a href="{link application='todolist' controller='Todo' object=$todo}{/link}">{$todo->getTitle()}</a> reagiert ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
+		<item name="todolist.like.notification.message.stacked"><![CDATA[{if $count < 4}{@$authors[0]->getAnchorTag()}{if $count == 2} und {else}, {/if}{@$authors[1]->getAnchorTag()}{if $count == 3} und {@$authors[2]->getAnchorTag()}{/if}{else}{@$authors[0]->getAnchorTag()} und {#$others} weitere{/if} haben auf {if LANGUAGE_USE_INFORMAL_VARIANT}dein{else}Ihr{/if} To-do <a href="{link application='todolist' controller='Todo' object=$todo}{/link}">{$todo->getTitle()}</a> reagiert ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
+	</category>
+</language>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/templatelistener.xsd">
+    <import>
+        <templatelistener name="todoReactionDataAttributes">
+            <environment>user</environment>
+            <templatename>todo</templatename>
+            <eventname>todoContentAttributes</eventname>
+            <templatecode><![CDATA[{@$__wcf->getReactionHandler()->getDataAttributes('de.julian-pfeil.todolist.reactions.likeableTodo', $todo->todoID)}]]></templatecode>
+        </templatelistener>
+        <templatelistener name="todoUiReactionHandler">
+            <environment>user</environment>
+            <templatename>todo</templatename>
+            <eventname>additionalJavascript</eventname>
+            <templatecode><![CDATA[{include file='__uiReactionHandler' application='todolist'}]]></templatecode>
+        </templatelistener>
+        <templatelistener name="todoReactionSummaryList">
+            <environment>user</environment>
+            <templatename>todo</templatename>
+            <eventname>beforeTodoButtons</eventname>
+            <templatecode><![CDATA[{include file='__reactionSummaryList' application='todolist'}]]></templatecode>
+        </templatelistener>
+        <templatelistener name="todoReactButton">
+            <environment>user</environment>
+            <templatename>todo</templatename>
+            <eventname>todoButtons</eventname>
+            <templatecode><![CDATA[{include file='__reactButton' application='todolist'}]]></templatecode>
+        </templatelistener>
+    </import>
+</data>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/5.4/objectType.xsd">
+    <import>
+		<type>
+			<name>de.julian-pfeil.todolist.reactions.likeableTodo</name>
+			<definitionname>com.woltlab.wcf.like.likeableObject</definitionname>
+			<classname>todolist\data\todo\LikeableTodoProvider</classname>
+		</type>
+		<type>
+			<name>de.julian-pfeil.todolist.reactions.likeableTodo.notification</name>
+			<definitionname>com.woltlab.wcf.notification.objectType</definitionname>
+			<classname>wcf\system\user\notification\object\type\LikeUserNotificationObjectType</classname>
+			<category>de.julian-pfeil.todolist.reactions</category>
+			<supportsReactions>1</supportsReactions>
+		</type>
+    </import>
+</data>
