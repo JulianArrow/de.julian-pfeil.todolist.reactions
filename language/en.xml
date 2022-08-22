@@ -4,6 +4,9 @@
 		<item name="wcf.like.title.de.julian-pfeil.todolist.reactions.likeableTodo"><![CDATA[Reacted with {@$like->render()} to the to-do <a href="{link application='todolist' controller='Todo' object=$todo}{/link}" class="todoLink" data-todo-id="{@$todo->todoID}">{$todo->getTitle()}</a>.]]></item>
  	</category>
 
+	<category name="wcf.user.notification">
+		<item name="wcf.user.notification.de.julian-pfeil.todolist.reactions.likeableTodo.notification.like"><![CDATA[Notify me when someone reacted to my to-dos]]></item>
+	</category>
 	
 	<category name="todolist.like">
 		<item name="todolist.like.notification.title"><![CDATA[Reaction to your to-do]]></item>

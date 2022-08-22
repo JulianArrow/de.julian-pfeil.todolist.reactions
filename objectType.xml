@@ -10,7 +10,7 @@
 			<name>de.julian-pfeil.todolist.reactions.likeableTodo.notification</name>
 			<definitionname>com.woltlab.wcf.notification.objectType</definitionname>
 			<classname>wcf\system\user\notification\object\type\LikeUserNotificationObjectType</classname>
-			<category>de.julian-pfeil.todolist.reactions</category>
+			<category>de.julian-pfeil.todolist</category>
 			<supportsReactions>1</supportsReactions>
 		</type>
     </import>

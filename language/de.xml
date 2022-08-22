@@ -4,6 +4,10 @@
 		<item name="wcf.like.title.de.julian-pfeil.todolist.reactions.likeableTodo"><![CDATA[Hat mit {@$like->render()} auf das To-do <a href="{link application='todolist' controller='Todo' object=$todo}{/link}" class="tpdpLink" data-todo-id="{@$todo->todoID}">{$todo->getTitle()}</a> reagiert.]]></item>
  	</category>
 
+	<category name="wcf.user.notification">
+		<item name="wcf.user.notification.de.julian-pfeil.todolist.reactions.likeableTodo.notification.like"><![CDATA[Reaktion auf {if LANGUAGE_USE_INFORMAL_VARIANT}deinen{else}Ihren{/if} To-do]]></item>
+	</category>
+
 	<category name="todolist.like">
 		<item name="todolist.like.notification.title"><![CDATA[Reaktion auf {if LANGUAGE_USE_INFORMAL_VARIANT}dein{else}Ihr{/if} To-do]]></item>
 		<item name="todolist.like.notification.title.stacked"><![CDATA[{#$count} Benutzer haben auf {if LANGUAGE_USE_INFORMAL_VARIANT}dein{else}Ihr{/if} To-do reagiert]]></item>
